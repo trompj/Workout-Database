@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Tracker</title>
+
+    <script src="./Script/frontScript.js"></script>
+</head>
+<body>
+
+<form id="insert-row">
+    <fieldset>
+        <h4>Add Workout</h4>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="reps">Number of reps:</label>
+        <input type="number" name="reps" id="reps">
+        <label for="weight">Weight:</label>
+        <input type="number" name="weight" id="weight">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <label for="lbs">Lbs:</label>
+        <input type="number" name="lbs" id="lbs">
+        <input type="submit" id="submit-workout">
+    </fieldset>
+</form>
+
+<h4>Workouts Completed</h4>
+<div id="workout-list-container">
+    <table>
+        <tbody id="workout-table">
+            <tr>
+                <th>Name</th>
+                <th>Reps</th>
+                <th>Weight</th>
+                <th>Date</th>
+                <th>Lbs</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="overlay-background" style="display: none; position: absolute; height: 100%; width: 100%; background-color: grey; top: 0; left: 0; opacity: .5"></div>
+
+<div id="form-edit-overlay" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%">
+    <form style="background-color: white">
+        <fieldset>
+            <h4>Update Workout</h4>
+            <br>
+            <label for="name-edit">Name:</label>
+            <input type="text" name="name-edit" id="name-edit">
+            <label for="reps-edit">Number of reps:</label>
+            <input type="number" name="reps-edit" id="reps-edit">
+            <label for="weight-edit">Weight:</label>
+            <input type="number" name="weight-edit" id="weight-edit">
+            <label for="date-edit">Date:</label>
+            <input type="date" name="date-edit" id="date-edit">
+            <label for="lbs-edit">Lbs:</label>
+            <input type="number" name="lbs-edit" id="lbs-edit">
+            <input type="submit" id="submit-edit">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
